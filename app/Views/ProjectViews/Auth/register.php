@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="<?=base_url('Assets/css/Auth/register/main.css')?>">
 </head>
 <body>
     <h2>Register</h2>

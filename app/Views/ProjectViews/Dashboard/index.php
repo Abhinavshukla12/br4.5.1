@@ -1,18 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="<?=base_url('Assets/css/Dashboard/main.css')?>">
-</head>
-<body>
-    <h1>Welcome, <?= $username; ?></h1>
-    <p>Email: <?= $email; ?></p>
-    <nav>
-        <ul>
-            <li><a href="<?=base_url('project/dashboard')?>">Dashboard</a></li>
-            <li><a href="<?=base_url('project/profile')?>">Profile</a></li>
-            <li><a href="<?=base_url('project/logout')?>">Logout</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
+<?= $this->extend('ProjectViews/layouts/main') ?>
+
+<?= $this->section('title') ?>Dashboard<?= $this->endSection() ?>
+
+<?= $this->section('content') ?>
+<h1>Welcome, <?= $username; ?></h1>
+<p>Email: <?= $email; ?></p>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<?= $this->endSection() ?>

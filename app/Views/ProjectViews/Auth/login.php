@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="<?=base_url('Assets/css/Auth/login/main.css')?>">
 </head>
 <body>
     <h2>Login</h2>
